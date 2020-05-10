@@ -1,0 +1,7 @@
+<launch>
+  <node name="image_converter_node" pkg="my_project" type="image_converter.py"
+output="screen"/>
+  <!-- <node name="teleop_twist_keyboard_node" pkg="my_project" type="teleop_twist_keyboard.py"
+output="screen"/> -->
+  <node name="foo_throttle" type="throttle" pkg="topic_tools" args="messages /bebop/image_raw 10" />
+</launch>
